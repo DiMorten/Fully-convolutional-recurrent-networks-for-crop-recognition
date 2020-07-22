@@ -1,8 +1,8 @@
-This is the code for the paper "Fully Convolutional Recurrent Networks for Crop Recognition Using Image Sequences"
+# This is the code for the paper "Fully Convolutional Recurrent Networks for Crop Recognition Using Image Sequences"
 
 This is an unpolished version which will be optimized soon.
 
-Instructions:
+## Instructions
 
 To train Campo Verde dataset and BUnetConvLSTM network:
 
@@ -11,9 +11,9 @@ To train Campo Verde dataset and BUnetConvLSTM network:
 3. Execute "cd igarss/convrnn_remote_sensing/src_seq2seq_ignorelabel/scripts/"
 4. Execute ". experiment_automation_lv2.sh"
 
-=========================================
+## Select the network to train
 
-The file "experiment_automation_lv2.sh" specifies the order of execution. For example, the order could be 1. extract image patches and 2. train BUnetConvLSTM network (Default configuration).
+The file "experiment_automation_lv2.sh" specifies the networks to be trained. For example, the order could be 1. extract image patches and 2. train BUnetConvLSTM network (Default configuration).
 
 Modify this script to train other networks: 
   1. open the "experiment_automation_lv2.sh" script, 
