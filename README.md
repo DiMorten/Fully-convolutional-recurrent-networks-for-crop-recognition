@@ -1,4 +1,4 @@
-# This is the code for the paper "Fully Convolutional Recurrent Networks for Crop Recognition Using Image Sequences"
+# This is the code for the paper "Fully Convolutional Recurrent Networks for Multidate Crop Recognition from Multitemporal Image Sequence"
 
 This is an unpolished version which will be optimized soon.
 
