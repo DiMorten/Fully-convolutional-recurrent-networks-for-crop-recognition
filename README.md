@@ -6,9 +6,9 @@ This is an unpolished version which will be optimized soon.
 
 To train Campo Verde dataset and BUnetConvLSTM network:
 
-1. Copy the sequence of input images in "deep_learning/LSTM-Final-Project/cv_data/in_np2/" folder
-2. Copy the sequence of output label images in "deep_learning/LSTM-Final-Project/cv_data/labels/" folder
-3. Execute "cd igarss/convrnn_remote_sensing/src_seq2seq_ignorelabel/scripts/"
+1. Copy the sequence of input images in "dataset/dataset/cv_data/in_np2/" folder
+2. Copy the sequence of output label images in "dataset/dataset/cv_data/labels/" folder
+3. Execute "cd networks/convlstm_networks/train_src/scripts/"
 4. Execute ". experiment_automation_lv2.sh"
 
 ## Select the network to train
