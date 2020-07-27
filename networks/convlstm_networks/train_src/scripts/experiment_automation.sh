@@ -6,25 +6,25 @@ dataset=$3 # could be cv or lem
 if [ "$dataset" == "cv_seq1" ]
 then
 	filename="campo_verde"
-	results_path='../results/seq2seq_ignorelabel/cv/'
-	summary_save_path='../results/seq2seq_ignorelabel/summary/cv/'
-	dataset_path="../../../deep_learning/LSTM-Final-Project/cv_data/"
+	results_path='../results/convlstm_results/cv/'
+	summary_save_path='../results/convlstm_results/summary/cv/'
+	dataset_path="../../../dataset/dataset/cv_data/"
 	sequence_len=7
 	class_n=12
 elif [ "$dataset" == "cv" ]
 then
 	filename="campo_verde"
-	results_path='../results/seq2seq_ignorelabel/cv/'
-	summary_save_path='../results/seq2seq_ignorelabel/summary/cv/'
-	dataset_path="../../../deep_learning/LSTM-Final-Project/cv_data/"
+	results_path='../results/convlstm_results/cv/'
+	summary_save_path='../results/convlstm_results/summary/cv/'
+	dataset_path="../../../dataset/dataset/cv_data/"
 	sequence_len=14
 	class_n=12
 
 else
 	filename="lm"
-	results_path='../results/seq2seq_ignorelabel/lm/'
-	summary_save_path='../results/seq2seq_ignorelabel/summary/lm/'
-	dataset_path="../../../deep_learning/LSTM-Final-Project/lm_data/"
+	results_path='../results/convlstm_results/lm/'
+	summary_save_path='../results/convlstm_results/summary/lm/'
+	dataset_path="../../../dataset/dataset/lm_data/"
 	sequence_len=13
 	class_n=15 # 14+bcknd
 fi

@@ -6,7 +6,7 @@ dataset='cv'
 
 
 # ==== EXTRACT PATCHES
-#. patches_extract.sh $dataset
+. patches_extract.sh $dataset
 # ===== USE MODEL
 
 
