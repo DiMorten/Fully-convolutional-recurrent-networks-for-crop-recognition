@@ -11,9 +11,9 @@ To train Campo Verde dataset and BUnetConvLSTM network:
 3. Execute "cd networks/convlstm_networks/train_src/scripts/"
 4. Execute ". experiment_automation_lv2.sh"
 
-## Select the network to train
+## Specify the execution order durinig training (select if you want to extract image patches and select the network)
 
-The file "experiment_automation_lv2.sh" specifies the networks to be trained. For example, the order could be 1. extract image patches and 2. train BUnetConvLSTM network (Default configuration).
+The file "experiment_automation_lv2.sh" specifies the execution order during training. For example, the order could be 1. extract image patches and 2. train BUnetConvLSTM network (Default configuration).
 
 Modify this script to train other networks: 
   1. open the "experiment_automation_lv2.sh" script, 
