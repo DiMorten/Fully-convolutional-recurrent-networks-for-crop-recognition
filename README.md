@@ -6,8 +6,8 @@ This is an unpolished version which will be optimized soon.
 
 To train Campo Verde dataset and BUnetConvLSTM network:
 
-1. Copy the sequence of input images in "dataset/dataset/cv_data/in_np2/" folder
-2. Copy the sequence of output label images in "dataset/dataset/cv_data/labels/" folder
+1. Copy the sequence of input images in "dataset/dataset/cv_data/in_np2/" folder. Rename the input images as 'inX.tif', where X is an integer representing the image ID in the sequence.
+2. Copy the sequence of output label images in "dataset/dataset/cv_data/labels/" folder. Rename the label images as 'X.tif', where X is an integer representing the image ID in the sequence.
 3. Execute "cd networks/convlstm_networks/train_src/scripts/"
 4. Execute ". experiment_automation_lv2.sh"
 
