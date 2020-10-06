@@ -2234,7 +2234,7 @@ class NetModel(NetObject):
 							np.expand_dims(batch['test']['label'].argmax(axis=4),axis=4).astype(np.int8))		# Accumulated epoch
 
 					data.patches['test']['prediction'][idx0:idx1]=self.graph.predict(
-						batch['test']['in'].astype(np.float32),batch_size=self.batch['test']['size'])*13
+						batch['test']['in'].astype(np.float32),batch_size=self.batch['test']['size'])
 
 
 			#====================METRICS GET================================================#
