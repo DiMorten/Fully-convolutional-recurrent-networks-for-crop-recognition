@@ -9,7 +9,6 @@ import keras
 import numpy as np
 from sklearn.utils import shuffle
 import cv2
-from skimage.util import view_as_windows
 import argparse
 import tensorflow as tf
 
@@ -29,12 +28,11 @@ from metrics import fmeasure,categorical_accuracy
 import deb
 from keras_weighted_categorical_crossentropy import weighted_categorical_crossentropy, sparse_accuracy_ignoring_last_label, weighted_categorical_crossentropy_ignoring_last_label
 from keras.models import load_model
-from keras.layers import ConvLSTM2D, ConvGRU2D, UpSampling2D, multiply
+from keras.layers import ConvLSTM2D, UpSampling2D, multiply
 from keras.utils.vis_utils import plot_model
 from keras.regularizers import l1,l2
 import time
 import pickle
-from keras_self_attention import SeqSelfAttention
 import pdb
 parser = argparse.ArgumentParser(description='')
 parser.add_argument('-tl', '--t_len', dest='t_len',
