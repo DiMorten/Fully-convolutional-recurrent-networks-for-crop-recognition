@@ -4,7 +4,7 @@ This is a first version which will be optimized soon.
 
 ## Preparing the input images 
 
-Use the helper file tif_to_npy.py to convert the TIF VH and VV input image bands for each date into NPY format. This script also converts from dB to intensity values. Set the im_folders variable to a list of folders for each image date.
+Use the helper file tif_to_npy.py to convert the TIF VH and VV input image bands for each date into NPY format, while also converting from dB to intensity values. Set the im_folders variable to a list of folders for each image date.
 
 ## Instructions
 
