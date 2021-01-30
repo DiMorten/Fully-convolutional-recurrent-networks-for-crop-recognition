@@ -2,6 +2,10 @@
 
 This is a first version which will be optimized soon.
 
+## Preparing the input images 
+
+Use the helper file tif_to_npy.py to convert the TIF VH and VV input image bands for each date into NPY format. This script also converts from dB to intensity values. Set the im_folders variable to a list of folders for each image date.
+
 ## Instructions
 
 To train Campo Verde dataset and BUnetConvLSTM network:
@@ -10,6 +14,7 @@ To train Campo Verde dataset and BUnetConvLSTM network:
 2. Copy the sequence of output label images in "dataset/dataset/cv_data/labels/" folder. Rename the label images as 'X.tif', where X is an integer representing the image ID in the sequence.
 3. Execute "cd networks/convlstm_networks/train_src/scripts/"
 4. Execute ". experiment_automation_lv2.sh"
+
 
 ## Specify the execution order durinig training (select if you want to extract image patches and select the network)
 
