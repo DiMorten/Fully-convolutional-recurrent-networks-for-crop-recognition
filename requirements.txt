@@ -1,0 +1,9 @@
+This list of commands recreates the environment used in the project
+
+conda create -n tf1 tensorflow-gpu==1.14.0 tensorflow==1.14.0
+pip install keras==2.1.6
+pip install -U scikit-learn
+conda install -c conda-forge opencv 
+conda install gdal
+pip install -U matplotlib
+conda install colorama
