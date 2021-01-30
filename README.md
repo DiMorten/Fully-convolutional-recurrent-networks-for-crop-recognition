@@ -22,9 +22,9 @@ The file "experiment_automation_lv2.sh" specifies the execution order during tra
 
 Modify this script to train other networks: 
   1. open the "experiment_automation_lv2.sh" script, 
-  2. change the "id" parameter from the "experiment_automation.sh" command to:
-    - ConvLSTM_seq2seq
-    - ConvLSTM_seq2seq_bi
-    - DenseNetTimeDistributed_128x2
-    - BUnet4ConvLSTM
-    - BAtrousGAPConvLSTM
+  2. In this script, change the second parameter from the "experiment_automation.sh" command, which is initially set to BUnet4ConvLSTM, to:
+    - ConvLSTM_seq2seq (In the paper known as UConvLSTM)
+    - ConvLSTM_seq2seq_bi (In the paper known as BConvLSTM)
+    - DenseNetTimeDistributed_128x2 (In the paper known as BDenseConvLSTM)
+    - BUnet4ConvLSTM (In the paper known as BUnetConvLSTM)
+    - BAtrousGAPConvLSTM (In the paper known as BAtrousGAPConvLSTM)
