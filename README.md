@@ -4,7 +4,7 @@ This is a first version which will be optimized soon.
 
 ## Installing the required python packages
 
-The list of anaconda commands to recreate the environment used in this project is in requirements.txt
+The list of anaconda commands to recreate the environment for this project is in requirements.txt
 
 ## Preparing the input images 
 
