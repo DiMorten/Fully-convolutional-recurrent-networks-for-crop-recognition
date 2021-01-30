@@ -2,9 +2,14 @@
 
 This is a first version which will be optimized soon.
 
+## Installing the required python packages
+
+The list of anaconda commands to recreate the environment used in this project is in requirements.txt
+
 ## Preparing the input images 
 
 Use the helper file tif_to_npy.py to convert the TIF VH and VV input image bands for each date into NPY format, while also converting from dB to intensity values. Set the im_folders variable to a list of folders for each image date.
+
 
 ## Instructions
 
