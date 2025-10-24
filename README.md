@@ -93,7 +93,8 @@ The `--path` argument points to your **data root**. Inside, keep or generate the
 ## Quick‑start: train **BUnetConvLSTM**
 
 ```bash
-python networks/convlstm_networks/train_src/main.py   --model_type BUnetConvLSTM   --path /data/crops/   --t_len 7   --channel_n 2   --class_n 11   --patch_len 32   --patch_step_train 32   --batch_size_train 32   --epochs 120   --patience 10   --exp_id bunet_s1_seq7_c2
+cd networks/convlstm_networks/train_src/
+python main.py   --model_type BUnetConvLSTM   --path /data/crops/   --t_len 7   --channel_n 2   --class_n 11   --patch_len 32   --patch_step_train 32   --batch_size_train 32   --epochs 120   --patience 10   --exp_id bunet_s1_seq7_c2
 ```
 
 ### Notes
@@ -106,12 +107,14 @@ python networks/convlstm_networks/train_src/main.py   --model_type BUnetConvLSTM
 
 To run evaluation with metric reporting:
 ```bash
-python networks/convlstm_networks/train_src/main.py   --model_type BUnetConvLSTM   --path /data/crops/   --t_len 7 --channel_n 2 --class_n 11   --patch_len 32 --patch_step_test 32   --batch_size_test 32   --eval_mode metrics   --im_store False   --exp_id bunet_s1_seq7_c2_eval
+cd networks/convlstm_networks/train_src/
+python main.py   --model_type BUnetConvLSTM   --path /data/crops/   --t_len 7 --channel_n 2 --class_n 11   --patch_len 32 --patch_step_test 32   --batch_size_test 32   --eval_mode metrics   --im_store False   --exp_id bunet_s1_seq7_c2_eval
 ```
 
 To generate prediction rasters/tiles (no metrics):
 ```bash
-python networks/convlstm_networks/train_src/main.py   --model_type BUnetConvLSTM   --path /data/crops/   --t_len 7 --channel_n 2 --class_n 11   --patch_len 32 --patch_step_test 32   --batch_size_test 32   --eval_mode predict   --im_store True   --exp_id bunet_s1_seq7_c2_pred
+cd networks/convlstm_networks/train_src/
+python main.py   --model_type BUnetConvLSTM   --path /data/crops/   --t_len 7 --channel_n 2 --class_n 11   --patch_len 32 --patch_step_test 32   --batch_size_test 32   --eval_mode predict   --im_store True   --exp_id bunet_s1_seq7_c2_pred
 ```
 
 ---
